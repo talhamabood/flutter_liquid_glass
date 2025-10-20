@@ -8,6 +8,9 @@ command:
   version:
     updateGitTagRefs: true
     workspaceChangelog: false
+    changelogCommitBodies:
+        include: true
+        onlyBreaking: false
     hooks:
       preCommit: |
         melos run generate
